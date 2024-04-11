@@ -60,10 +60,10 @@ export const cartReducer = createSlice({
       state.discount = action.payload;
     },
     saveShippingInfo: (state, action: PayloadAction<ShippingInfo>) => {
-      state.shippingInfo = action.payload; 
+      state.shippingInfo = action.payload;
     },
     resetCart: () => initialState,
-  },   
+  },
 });
 
 export const {
