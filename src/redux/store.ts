@@ -18,12 +18,13 @@ export const store = configureStore({
     [cartReducer.name]: cartReducer.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat([
+    getDefaultMiddleware().concat(
       userAPI.middleware,
       productAPI.middleware,
       orderApi.middleware,
-      dashboardApi.middleware,
-    ]),
+      dashboardApi.middleware
+    ),
 });
+
 
 export type RootState = ReturnType<typeof store.getState>;
