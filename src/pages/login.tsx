@@ -82,7 +82,7 @@ const Login = () => {
 
         <div>
           <p>Already Signed In Once</p>
-          <button onClick={loginHandler}>
+          <button type="button" onClick={loginHandler}>
             <FcGoogle /> <span>Sign in with Google</span>
           </button>
         </div>
